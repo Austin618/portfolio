@@ -6,7 +6,7 @@ const Line = () => {
     return (
         <nav>
             <hr />
-            <div className="fa-solid fa-plane" style={{ marginLeft: '50.3%' }}></div>
+            <div className="fa-solid fa-plane" style={{ marginLeft: '50.3%'}}></div>
         </nav>
     );
 };

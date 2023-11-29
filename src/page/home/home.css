@@ -32,10 +32,26 @@
 }
 
 .welcome {
-    max-width: 70%;
-    padding-top: 15%;
-    padding-left: 5%;
-    padding-bottom: 27%;
+    height: calc(64vw - 80px);
+}
+
+/*@media (max-width: 1200px) {*/
+/*    .welcome {*/
+/*        height: 650px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 801px) {*/
+/*    .welcome {*/
+/*        height: 450px;*/
+/*    }*/
+/*}*/
+
+@media (max-width: 800px) {
+    .welcome {
+        height: 450px;
+        transition: none; /* Remove transition for screens less than 800px */
+    }
 }
 
 .grey-background {
@@ -73,4 +89,12 @@
     color: white;
     border-radius: 5px;
     font-size: 15px;
+}
+
+.subTitle {
+    position: absolute;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-top:calc(20% + 80px);
+    color: white;
 }

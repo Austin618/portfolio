@@ -9,6 +9,7 @@ hr {
     border-top: 2px dashed rgba(0, 0, 0, 0.25);
     border-bottom: 2px dashed rgba(0, 0, 0, 0.25);
     float: left;
+    min-width: 530px;
 }
 
 hr ~ * {

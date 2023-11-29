@@ -21,8 +21,8 @@ const Home = () => {
             <img className="picContainer" src="https://i.ibb.co/m8DLvxJ/1-1.jpg" alt="background" />
 
             <div className="marginLeft welcome">
-                <h1 style={{ fontSize: '50px'}}>Welcome to <br />Austin(Qiming) Ye's Portfolio</h1><br />
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A full stack developer</p>
+                <h1 style={{ position: 'absolute', fontSize: '35px', marginLeft: '10%', marginTop:'20%', minWidth:'550px'}}>Welcome to <br />Austin(Qiming) Ye's Portfolio</h1><br />
+                <p className="subTitle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A full stack developer</p>
             </div>
 
             <Line />
