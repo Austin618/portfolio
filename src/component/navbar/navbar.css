@@ -104,7 +104,7 @@ nav {
         background-color: var(--mainColor);
         transition: 0.3s;
         transform: translateY(-100vh);
-        z-index: 10;
+        z-index: -1;
     }
 
     header .responsive_nav {
