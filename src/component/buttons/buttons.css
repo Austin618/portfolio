@@ -1,0 +1,63 @@
+.fa, .fa-brands, .fa-download {
+    padding: 10px 0px 10px 12px;
+    font-size: 30px;
+    width: 53px;
+    height: 50px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 25%;
+    transition: all 0.3s;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+
+.fa-brands:hover, .fa-download:hover {
+    opacity: 0.8;
+    padding-right: 5px; /* Increase the padding to move the icon left by 5 pixels on hover */
+    width: 70px;
+}
+
+.fa:after {
+    opacity: 0;
+    font-family: none, system-ui;
+    font-weight: normal;
+}
+
+.fa-brands:after, .fa-download:after {
+    content: '\2006\00bb'; /* Two right arrows initially hidden */
+    opacity: 0;
+    font-family: none, system-ui;
+    font-weight: normal;
+}
+
+.fa:hover:after, .fa-brands:hover:after, .fa-download:hover:after {
+    opacity: 1;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+}
+
+.fa-youtube {
+    background: #bb0000;
+}
+
+.fa-github, .fa-download, .fa-gear, .fa-code, .fa-envelope, .fa-phone, .fa-map-location-dot, .fa-list-check, .fa-building, .fa-address-card {
+    background: #000000;
+}
+
+@media only screen and (min-width: 825px) {
+    .buttonFlex {
+        position: absolute;
+        right: 10px;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .buttonFlex {
+        position: relative;
+    }
+}

@@ -1,0 +1,75 @@
+.test {
+    /*height: 630px;*/
+    /*margin-bottom: 30px;*/
+    /*max-width: 500px; !* Adjusted the max-width to the later declaration *!*/
+    /*min-height: 200px;*/
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 20px 40px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(15px);
+}
+
+.marginLeft {
+    margin-left: 75px;
+    margin-right: 146px;
+}
+
+.picContainer {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0.3;
+}
+
+.welcome {
+    max-width: 70%;
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-bottom: 27%;
+}
+
+.grey-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #989898; /* Set the desired grey background color */
+    z-index: -1;
+}
+
+.fa-code, .fa-list-check, .fa-building, .fa-address-card {
+    padding: 5px;
+    font-size: 25px;
+    margin-right: 5px;
+    border-radius: 25%;
+    color: white;
+}
+
+.sameLine {
+    display: inline-block;
+}
+
+.floatRight {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.view {
+    border: none;
+    padding: 3px;
+    cursor: pointer;
+    background: #545454;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
