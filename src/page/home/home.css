@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    padding: 20px 40px;
+    padding: 20px 20px;
 
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 20px;
@@ -18,8 +18,8 @@
 }
 
 .marginLeft {
-    margin-left: 75px;
-    margin-right: 146px;
+    margin-left: 65px;
+    margin-right: 120px;
 }
 
 .picContainer {
@@ -28,6 +28,7 @@
     padding: 0;
     margin: 0;
     opacity: 0.3;
+    min-width: 800px;
 }
 
 .welcome {

@@ -39,13 +39,13 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 100px;
+    top: 18%;
     left: 0px;
 }
 
 .clock-col {
     text-align: center;
-    min-width: 70px;
+    min-width: 60px;
     position: relative;
 }
 

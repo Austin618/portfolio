@@ -15,10 +15,10 @@ import Line from "../../component/line/line";
 const Home = () => {
 
     return (
-        <div>
+        <div style={{minWidth:'800px'}}>
             <Navbar />
             <div className="grey-background"></div>
-            <img className="parentOfPicContainer picContainer" src="https://i.ibb.co/m8DLvxJ/1-1.jpg" alt="background" />
+            <img className="picContainer" src="https://i.ibb.co/m8DLvxJ/1-1.jpg" alt="background" />
 
             <div className="marginLeft welcome">
                 <h1 style={{ fontSize: '50px'}}>Welcome to <br />Austin(Qiming) Ye's Portfolio</h1><br />
