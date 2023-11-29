@@ -1,4 +1,4 @@
-import React, {useRef, useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import './float.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 
@@ -39,7 +39,7 @@ const Float = () => {
             <div style={{ position: 'fixed', bottom: '20px', right: '20px', display: 'flex', alignItems: 'center', zIndex: '10' }}>
                 <h2 style={{ marginRight: '3px', marginBottom: '0', background: '#414141', color:'white', borderRadius:'10px', padding:'3px' }}>Resume</h2>
 
-                <a href="https://drive.google.com/drive/folders/1Dbs5Vor26mQpplkiscACGydmZ7q0oJ1A?usp=sharing" className="fa fa-download" target="_blank">
+                <a href="https://drive.google.com/drive/folders/1Dbs5Vor26mQpplkiscACGydmZ7q0oJ1A?usp=sharing" className="fa fa-download" target="_blank" rel="noopener noreferrer">
                 </a>
             </div>
 

@@ -1,4 +1,4 @@
-import React, {useRef, useState, useEffect} from 'react';
+import React from 'react';
 import './line.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 

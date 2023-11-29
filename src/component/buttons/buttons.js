@@ -7,8 +7,8 @@ const Buttons = () => {
         <div className="buttonFlex">
 
             {/* Add Font Awesome icons */}
-            <a href="https://www.linkedin.com/in/qiming-ye/" className="fa-brands fa-linkedin" target="_blank"></a>
-            <a href="https://github.com/Austin618?tab=repositories" className="fa-brands fa-github" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/qiming-ye/" className="fa-brands fa-linkedin" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://github.com/Austin618?tab=repositories" className="fa-brands fa-github" target="_blank" rel="noopener noreferrer"></a>
             {/*<a href="#" className="fa fa-download"></a>*/}
 
             {/*<a href="#" className="fa-brands fa-youtube"></a>*/}

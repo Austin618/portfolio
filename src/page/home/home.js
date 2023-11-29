@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./home.css";
 
-
-import {Link} from "react-router-dom";
 import '@fortawesome/fontawesome-free/css/all.css';
 import Navbar from "../../component/navbar/navbar";
 import Float from "../../component/float/float";
@@ -41,7 +39,7 @@ const Home = () => {
                     </div>
 
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <p style={{ display: 'inline-block' }}>Develop for Good/Louisiana Husky Rescue Organization:  <a href="http://louisianahuskyrescue.com/" target="_blank">Link</a></p>
+                        <p style={{ display: 'inline-block' }}>Develop for Good/Louisiana Husky Rescue Organization:  <a href="http://louisianahuskyrescue.com/" target="_blank" rel="noopener noreferrer">Link</a></p>
                         <p style={{ display: 'inline-block', textAlign: 'right' }}>May. 2023 ~ Aug. 2023</p>
                     </div>
                     App (petOffenders):
@@ -63,7 +61,7 @@ const Home = () => {
                     </div>
 
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <p style={{ display: 'inline-block' }}>TAPP Website: <a href="https://theteacherapp.ca/" target="_blank">Link</a></p>
+                        <p style={{ display: 'inline-block' }}>TAPP Website: <a href="https://theteacherapp.ca/" target="_blank" rel="noopener noreferrer">Link</a></p>
                         <p style={{ display: 'inline-block', textAlign: 'right' }}>Jan. 2022 ~ Apr. 2022</p>
                     </div>
 
