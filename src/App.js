@@ -5,6 +5,7 @@ import {
     Routes,
 } from 'react-router-dom';
 import Home from "./page/home/home";
+import Jp from "./page/jp/jp";
 
 
 const App = () => {
@@ -12,8 +13,10 @@ const App = () => {
         <Router>
             {/*<Navigate from="/" to="/portfolio" />*/}
             <Routes>
-                <Route path="/portifolio" element={<Home />} />
                 <Route path="/" element={<Home />} />
+                <Route path="/portfolio" element={<Home />} />
+
+                <Route path="/portfolio/jp" element={<Jp />} />
             </Routes>
         </Router>
     );
