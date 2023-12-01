@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import Buttons from "../buttons/buttons";
 
 
-const Navbar = () => {
+const Navbar = ({currentLanguage}) => {
     const navRef = useRef(null);
 
     const showNavbar = () => {
@@ -26,46 +26,55 @@ const Navbar = () => {
         }
     };
 
+    let title, about, skills, projects, experience;
+
+    switch (currentLanguage) {
+        case 0:
+            title = "Portfolio";
+            experience = "Experience";
+            projects = "Projects";
+            skills = "Skills";
+            about = "About";
+            break;
+        case 1:
+            title = "ポートフォリオ";
+            experience = "経験";
+            projects = "プロジェクト";
+            skills = "スキル";
+            about = "について";
+            break;
+        case 2:
+            title = "作品集";
+            experience = "经验";
+            projects = "项目";
+            skills = "技能";
+            about = "关于";
+            break;
+    }
+
 
     return (
         <header>
-            <Link to="/"><button className="logoBox">Portfolio</button></Link>
+            <Link to="/"><button className="logoBox">{title}</button></Link>
             <nav ref={navRef}>
+
                 <button type="" className="but type" onClick={() => handleButtonClick("experience")}>
-                    Experience
+                    {experience}
                 </button>
 
                 <button type="" className="but type" onClick={() => handleButtonClick("projects")}>
-                    Projects
+                    {projects}
                 </button>
 
                 <button type="" className="but type" onClick={() => handleButtonClick("skills")}>
-                    Skills
+                    {skills}
                 </button>
 
                 <button type="" className="but type" onClick={() => handleButtonClick("about")}>
-                    About
+                    {about}
                 </button>
 
-
-                {/*<Link to="/">*/}
-                {/*    <button type="" className="buttonBox">*/}
-                {/*        Resume*/}
-                {/*    </button>*/}
-                {/*</Link>*/}
-
                 <Buttons />
-                {/*<Link to="/">*/}
-                {/*    <button type="" className="buttonBox">*/}
-                {/*        Projects*/}
-                {/*    </button>*/}
-                {/*</Link>*/}
-
-                {/*<Link to="/">*/}
-                {/*    <button type="" className="buttonBox">*/}
-                {/*        Projects*/}
-                {/*    </button>*/}
-                {/*</Link>*/}
 
                 <button
                     className="nav-btn nav-close-btn"
@@ -82,87 +91,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-// class Navbar extends React.Component {
-//
-//     constructor(props) {
-//         super(props);
-//         this.navRef = React.createRef();
-//
-//         this.state = {
-//             channelId: "",
-//         };
-//     }
-//
-//     showNavbar = () => {
-//         this.navRef.current.classList.toggle("responsive_nav");
-//     };
-//
-//     handleButtonClick = (navigate) => {
-//         // Smooth scroll to the #projects element
-//         requestAnimationFrame(() => {
-//             const element = document.getElementById(navigate);
-//             if (element) {
-//                 element.scrollIntoView({ behavior: 'smooth' });
-//             }
-//         });
-//         if (window.innerWidth < 650) {
-//             this.showNavbar();
-//         }
-//         // window.location.href = "#projects";
-//     };
-//
-//     render() {
-//         return (
-//             <header>
-//                 <Link to="/"><button className="logoBox">Portfolio</button></Link>
-//                 <nav ref={this.navRef}>
-//                     {/*<Link to="/"><button className="buttonBox">Home</button></Link>*/}
-//                     {/*<Link to="/Channel"><button className="buttonBox">Channel</button></Link>*/}
-//
-//                     {/*<Link to="/projects">*/}
-//                         <button type="" className="buttonBox" onClick={() => this.handleButtonClick("projects")}>
-//                             Projects
-//                         </button>
-//                     {/*</Link>*/}
-//                     {/*<Link to="/#skills">*/}
-//                         <button type="" className="buttonBox" onClick={() => this.handleButtonClick("skills")}>
-//                             Skills
-//                         </button>
-//                     {/*</Link>*/}
-//                     <Link to="/">
-//                         <button type="" className="buttonBox">
-//                             Resume
-//                         </button>
-//                     </Link>
-//
-//                     <Buttons />
-//                     {/*<Link to="/">*/}
-//                     {/*    <button type="" className="buttonBox">*/}
-//                     {/*        Projects*/}
-//                     {/*    </button>*/}
-//                     {/*</Link>*/}
-//
-//                     {/*<Link to="/">*/}
-//                     {/*    <button type="" className="buttonBox">*/}
-//                     {/*        Projects*/}
-//                     {/*    </button>*/}
-//                     {/*</Link>*/}
-//
-//                     <button
-//                         className="nav-btn nav-close-btn"
-//                         onClick={()=>{this.showNavbar()}}>
-//                         <FaTimes />
-//                     </button>
-//
-//
-//
-//                 </nav>
-//                 <button className="nav-btn" onClick={()=>{this.showNavbar()}}>
-//                     <FaBars />
-//                 </button>
-//             </header>
-//         );
-//     }
-// }
-//
-// export default Navbar;

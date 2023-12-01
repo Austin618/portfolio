@@ -1,0 +1,63 @@
+/*button {*/
+/*    border: none;*/
+/*    background: none;*/
+/*    color: white;*/
+/*    cursor: pointer;*/
+/*    font-weight: normal;*/
+/*}*/
+
+/*button.active {*/
+/*    color: orange;*/
+/*    background: white;*/
+/*    font-weight: bold;*/
+/*}*/
+
+
+
+.language-switch-container {
+    position: fixed;
+    background: #F36F25;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    bottom: 0px;
+    left: 0px;
+}
+
+button {
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    margin:10px 10px 0px 12px;
+    z-index: 3;
+}
+
+.white-block {
+    position: absolute;
+    bottom: 0;
+    left: calc(var(--language) * 31.3%);
+    width: 32%;
+    height: 34px;
+    background: white;
+    transition: left 0.3s ease-in-out;
+    border-radius: 20px;
+    margin: 2px 1px 3px 4px;
+}
+
+.enActive {
+    color: #F36F25;
+    font-weight: bold;
+}
+
+.jpActive {
+    color: #F36F25;
+    font-weight: bold;
+}
+
+.chActive {
+    color: #F36F25;
+    font-weight: bold;
+}

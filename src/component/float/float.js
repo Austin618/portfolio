@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './float.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 
-const Float = () => {
+const Float = ({currentLanguage}) => {
     const [showButton, setShowButton] = useState(false);
 
     useEffect(() => {
@@ -29,6 +29,20 @@ const Float = () => {
         });
     };
 
+    let resume;
+
+    switch (currentLanguage) {
+        case 0:
+            resume = "Resume";
+            break;
+        case 1:
+            resume = "履歴書";
+            break;
+        case 2:
+            resume = "简历";
+            break;
+    }
+
     return (
         <div>
             <div className="scrollToTop">
@@ -37,7 +51,7 @@ const Float = () => {
                 )}
             </div>
             <div style={{ position: 'fixed', bottom: '20px', right: '20px', display: 'flex', alignItems: 'center', zIndex: '10' }}>
-                <h2 style={{ marginRight: '3px', marginBottom: '0', background: '#414141', color:'white', borderRadius:'10px', padding:'3px' }}>Resume</h2>
+                <h2 style={{ marginRight: '3px', marginBottom: '0', background: '#414141', color:'white', borderRadius:'10px', padding:'3px' }}>{resume}</h2>
 
                 <a href="https://drive.google.com/drive/folders/1Dbs5Vor26mQpplkiscACGydmZ7q0oJ1A?usp=sharing" className="fa fa-download" target="_blank" rel="noopener noreferrer">
                 </a>

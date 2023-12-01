@@ -23,7 +23,6 @@
     text-decoration: none;
     color: #fff;
     border-radius: 10px;
-    padding: 8px;
     transform: rotate3d(1, -0.35, 1, 45deg);
     transition: transform 300ms;
     border: none;
