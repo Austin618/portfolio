@@ -198,7 +198,7 @@ const Home = () => {
             ];
             break;
         case 1:
-            welcome1 = "ヨウケイメイの";
+            welcome1 = "カノウ ケイメイの";
             welcome2 = "ポートフォリオへようこそ";
             sub = "フルスタック開発者";
             experience = "経験";
