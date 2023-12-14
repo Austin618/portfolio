@@ -55,7 +55,7 @@ const Home = () => {
                     </div>
 
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <p style={{ display: 'inline-block', fontStyle: 'italic' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ReactNative, AWS(Amplify, DynamoDB, S3, Cognito)</p>
+                        <p style={{ display: 'inline-block', fontStyle: 'italic' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ReactNative, NodeJS(ReactJS, ExpressJS), MongoDB, Mocha/Chai</p>
                         <p style={{ display: 'inline-block', textAlign: 'right' }}>Jan. 2022 ~ Apr. 2022</p>
                     </div>
 
@@ -231,7 +231,7 @@ const Home = () => {
                     </div>
 
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <p style={{ display: 'inline-block', fontStyle: 'italic' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ReactNative, AWS(Amplify, DynamoDB, S3, Cognito)</p>
+                        <p style={{ display: 'inline-block', fontStyle: 'italic' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ReactNative, NodeJS(ReactJS, ExpressJS), MongoDB, Mocha/Chai</p>
                         <p style={{ display: 'inline-block', textAlign: 'right' }}>2022.1 ~ 2022.4</p>
                     </div>
 
@@ -366,9 +366,9 @@ const Home = () => {
             ];
             aboutContent = [
                 <div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;私は、2023年にトロント大学でコンピュータ・サイエンス・スペシャリストの優等理学士号
-                    を取得しました。昨年1月にカナダのスタートアップで、今年5月にアメリカの非営利団体でインターンシップに参加しました。
-                    定期的に技術関連のニュースをフォローしており、面白いことを開発したり探求したりするのが好きです。
+                    &nbsp;&nbsp;&nbsp;&nbsp;2023年、私は優秀な成績でトロント大学のコンピュータサイエンスの学士号を取得しました。
+                    2回のインターンシップ経験があり、昨年1月にはカナダの新興企業で、今年5月にはアメリカの非営利組織で経験を積みました。
+                    私は新技術動向に興味を持っており、面白いものを開発したり探求したりすることが好きです。
                 </div>
             ];
             break;
@@ -406,7 +406,7 @@ const Home = () => {
                     </div>
 
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <p style={{ display: 'inline-block', fontStyle: 'italic' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ReactNative, AWS(Amplify, DynamoDB, S3, Cognito)</p>
+                        <p style={{ display: 'inline-block', fontStyle: 'italic' }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ReactNative, NodeJS(ReactJS, ExpressJS), MongoDB, Mocha/Chai</p>
                         <p style={{ display: 'inline-block', textAlign: 'right' }}>2022.1 ~ 2022.4</p>
                     </div>
 

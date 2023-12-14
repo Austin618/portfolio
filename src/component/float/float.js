@@ -29,17 +29,20 @@ const Float = ({currentLanguage}) => {
         });
     };
 
-    let resume;
+    let resume, link;
 
     switch (currentLanguage) {
         case 0:
             resume = "Resume";
+            link = "https://drive.google.com/drive/folders/1Dbs5Vor26mQpplkiscACGydmZ7q0oJ1A?usp=sharing"
             break;
         case 1:
             resume = "履歴書";
+            link = "https://drive.google.com/drive/folders/1tdp6LAlXEe76RcE5bH-SXzCnzlJ_cwnU?usp=sharing"
             break;
         case 2:
             resume = "简历";
+            link = "https://drive.google.com/drive/folders/1Dbs5Vor26mQpplkiscACGydmZ7q0oJ1A?usp=sharing"
             break;
     }
 
@@ -53,7 +56,7 @@ const Float = ({currentLanguage}) => {
             <div style={{ position: 'fixed', bottom: '20px', right: '20px', display: 'flex', alignItems: 'center', zIndex: '10' }}>
                 <h2 style={{ marginRight: '3px', marginBottom: '0', background: '#414141', color:'white', borderRadius:'10px', padding:'3px' }}>{resume}</h2>
 
-                <a href="https://drive.google.com/drive/folders/1Dbs5Vor26mQpplkiscACGydmZ7q0oJ1A?usp=sharing" className="fa fa-download" target="_blank" rel="noopener noreferrer">
+                <a href={link} className="fa fa-download" target="_blank" rel="noopener noreferrer">
                 </a>
             </div>
 
